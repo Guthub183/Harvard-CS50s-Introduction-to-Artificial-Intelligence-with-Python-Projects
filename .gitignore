@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# CS50 Datasets (large files that should not be on GitHub)
+**/large/
+**/small/
+*.zip
+*.tar.gz
