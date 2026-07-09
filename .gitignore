@@ -2,9 +2,16 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.ipynb_checkpoints/
 
 # CS50 Datasets (large files that should not be on GitHub)
 **/large/
 **/small/
+**/gtsrb/
+**/gtsrb-small/
+**/Numpy formatted data/
 *.zip
 *.tar.gz
+*.mp3
+*.mp4
+*.exe
