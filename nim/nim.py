@@ -190,11 +190,11 @@ class NimAI():
             return best_action
         else:
             choice_methods = ['greedy', 'non_greedy']
-            choice = random.choices(choice_methods, weights = [1-self.epsilon, epsilon], k=1)[0]
+            choice = random.choices(choice_methods, weights = [1 - self.epsilon, self.epsilon], k=1)[0]
             
             sorted_actions = self.sort_actions_by_rewards(state)
             
-            if choice is 'greedy':
+            if choice == 'greedy':
                 best_action = list(sorted_actions.keys())[0][1]
                 return best_action
             else:
